@@ -1,0 +1,83 @@
+# 📚 RAG avec Google Drive et OpenAI
+
+## 📝 Description
+
+Un projet innovant combinant la recherche dans Google Drive et l'utilisation de modèles IA pour générer des réponses contextuelles basées sur des documents et des recherches web.
+
+## 🚀 Fonctionnalités Principales
+
+- **Recherche Avancée** 
+  - Exploration complète des fichiers Google Drive par nom et contenu
+  - Compatible avec de multiples formats (PDF, DOCX, TXT, etc.)
+  - Recherche hybride combinant Google Drive et sources web
+
+- **Intelligence Artificielle**
+  - Génération de réponses contextuelles avec OpenAI
+  - Extraction intelligente de l'information
+  - Interface CLI intuitive
+
+## 🛠️ Prérequis Techniques
+
+- Python 3.8+
+- Clé API OpenAI
+- Projet configuré sur Google Cloud Console
+- API Google Drive activée
+
+## 🔧 Installation
+
+### Étapes d'Installation
+
+1. **Clonage du Projet**
+   ```bash
+   git clone <url_du_projet>
+   cd <nom_du_projet>
+   ```
+
+2. **Configuration de l'Environnement**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Unix
+   # venv\Scripts\activate   # Windows
+   ```
+
+3. **Installation des Dépendances**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configuration des Credentials**
+   - Placez `credentials.json` (Google Cloud Console) à la racine
+   - Créez un fichier `.env` avec votre clé API OpenAI
+     ```
+     OPENAI_API_KEY=your-openai-api-key
+     ```
+
+## 🚀 Utilisation
+
+### Lancement du Programme
+
+```bash
+python main.py
+```
+
+### Options de Recherche
+
+- `drive` : Recherche dans Google Drive
+- `web` : Recherche web
+- `all` : Recherche hybride
+
+### Commandes
+
+- Sélectionnez le type de recherche
+- Posez vos questions
+- Tapez `exit` pour quitter
+
+## 🔒 Autorisations
+
+Lors de la première exécution, générez `token.json` en autorisant l'accès à Google Drive.
+
+## 📋 Remarques
+
+- Assurez-vous d'avoir tous les prérequis installés
+- Gardez vos clés API confidentielles
+- Consultez la documentation pour plus de détails
